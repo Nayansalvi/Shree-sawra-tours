@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Shree Sawara Tours</title>
+  
+  <link rel="stylesheet" href="Contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+  <div class="logo">Shree Sawara Tours</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Page1.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out for bookings, queries, or feedback.</p>
+
+    <form action="https://formspree.io/f/xgvznqdn" method="post">
+      <input id="name" type="text" name="name:" placeholder="Your Name" required />
+
+      <input id="email" type="email" name="email:" placeholder="Your Email" required />
+            <input id="phone" type="number" name="Phone number:" placeholder="Your phone number" required />
+     <label for="pessenger">choose a number of pessenger:</label>
+
+<select id="pessenger" name="number of pessengers:">
+  <option value="in msg">I'll tell you in message</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  
+</select>
+      <textarea id="msg" name="message:" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+<P>Wait 24 hours and we'll call you.</P>
+    <div class="contact-info">
+      <p><strong>Email:</strong> shreesawratours@gmail.com</p>
+      <p><strong>Phone: </strong>9829772935, 6350454879</p>
+      <p><strong>Location:</strong> Udaipur, Rajasthan</p>
+    </div>
+  </section>
+
+  <footer>
+    <p id="p">&copy; 2025 Shree Sawara Tours. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
