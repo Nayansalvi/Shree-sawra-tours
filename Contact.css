@@ -129,6 +129,10 @@ nav a {
       transition: background-color 0.3s ease;
     }
 
+.contact textarea {
+  padding-bottom: 5rem;
+}
+
     .contact button:hover {
       background-color: #e6c200;
     }
