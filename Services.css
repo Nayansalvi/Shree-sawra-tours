@@ -138,6 +138,11 @@ header.shrink {
   transition: 0.3s;
 }
 
+.toform{
+  text-decoration: none;
+  color: black;
+}
+
 #wlcm{
   font-size: 2rem;
 }
