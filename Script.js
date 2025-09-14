@@ -35,18 +35,4 @@ if (contactForm) {
     alert('Your message has been sent! Thank you for contacting us.');
   });
 }
-const testimonials = [
-  "“Amazing trip with Shree Sawara Tours!”",
-  "“Best travel service in Rajasthan.”",
-  "“Affordable and super comfortable rides.”",
- "Travel is the only thing you buy that makes you richer."
-];
 
-let index = 0;
-function changeTestimonial() {
-  const box = document.querySelector(".testimonials p");
-  box.textContent = testimonials[index];
-  index = (index + 1) % testimonials.length;
-}
-
-setInterval(changeTestimonial, 3000); // every 3 sec

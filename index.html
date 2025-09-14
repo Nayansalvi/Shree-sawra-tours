@@ -159,5 +159,22 @@
     <p>&copy; 2025 Shree Sawara Tours. All rights reserved.</p>
   </footer>
   <script src="Script.js"></script>
+  <script>
+    const testimonials = [
+  "“Amazing trip with Shree Sawara Tours!”",
+  "“Best travel service in Rajasthan.”",
+  "“Affordable and super comfortable rides.”",
+ "Travel is the only thing you buy that makes you richer."
+];
+
+let index = 0;
+function changeTestimonial() {
+  const box = document.querySelector(".testimonials p");
+  box.textContent = testimonials[index];
+  index = (index + 1) % testimonials.length;
+}
+
+setInterval(changeTestimonial, 3000); // every 3 sec
+  </script>
 </body>
 </html>
