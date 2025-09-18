@@ -120,6 +120,7 @@ nav a {
       border-radius: 5px;
       font-family: inherit;
       font-size: 1rem;
+      resize: none;
     }
 
     .contact button {

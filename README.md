@@ -7,7 +7,7 @@ Descripttion:- It's a websites about tours and travels which run in rajasthan if
 <br>
 
 # Screenshots
-<h2>Home page :<h2><img src="Home.jpg" alt="home">
+Home page :<img src="Home.jpg" alt="home">
 
 <br>
 

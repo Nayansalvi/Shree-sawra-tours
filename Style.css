@@ -308,6 +308,7 @@ nav a.active {
       font-size: 1rem;
       width: 300px;
       height: 200px;
+      resize: none;
     }
 
     .feedback button {
