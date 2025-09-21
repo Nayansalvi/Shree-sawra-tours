@@ -80,7 +80,8 @@ nav a {
 }
   .menu-icon {
     display: block;
-    padding-left: 3rem;
+    position: absolute;
+    right: 1.5rem;
   }
 
   nav ul li {

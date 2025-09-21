@@ -33,7 +33,7 @@
 </head>
 <body>
   <header>
-  <a href="index.html"><div class="logo">Shree Sawara Tours</div></a>
+  <a href="index.html"><div class="logo">Shree Sawra Tours</div></a>
   <input type="checkbox" id="menu-toggle" />
   <label for="menu-toggle" class="menu-icon">&#9776;</label>
   <nav>
@@ -88,7 +88,7 @@
       </a>
       <a href="Contact.html" class="toform">
       <div class="card">
-        <img src="chittorgarh.jpg" alt="Chittorgarh Tour">
+        <img src="img1.jpg" alt="Chittorgarh Tour">
         <h3>Chittorgarh Fort Tour</h3>
         <p>Step into history with our heritage-focused tour packages.</p>
       </div>
@@ -101,6 +101,10 @@
       </div>
       </a>
     </div>
+  </section>
+  <section class="testimonials">
+    <h4>What people say about us :</h4>
+    <p></p>
   </section>
 </main>
 <footer>
@@ -119,5 +123,23 @@
     </div>
   </footer>
 <script src="Script.js"></script>
+<script>
+  const testimonials = [
+  "“Best travel service with kailash ji.”",
+  "“Very neat and clean car and driver is also very nice.”",
+  "“Never have this much fun in my life i reccoment every one .”",
+   "driver is so good and car is also very clean",
+   "Travel is the only thing you buy that makes you richer."
+];
+
+let index = 0;
+function changeTestimonial() {
+  const box = document.querySelector(".testimonials p");
+  box.textContent = testimonials[index];
+  index = (index + 1) % testimonials.length;
+}
+
+setInterval(changeTestimonial, 3000); // every 3 sec
+</script>
 </body>
 </html>

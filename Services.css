@@ -86,6 +86,12 @@ nav a {
   border-radius: 8px;
 }
 
+/* TESTIMONIAL SECTION */
+.testimonials {
+  padding: 2rem;
+  background: #e0f0ff;
+  text-align: center;
+}
 
 /* MOBILE NAV STYLES */
 .menu-icon {
@@ -184,7 +190,8 @@ footer {
 }
   .menu-icon {
     display: block;
-    padding-left: 3rem;
+    position: absolute;
+    right: 1.5rem;
   }
 
   nav ul li {
