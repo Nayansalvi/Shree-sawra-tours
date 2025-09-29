@@ -104,8 +104,7 @@ nav a.active {
 
 /* HERO SECTION */
 .hero {
- /* background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;*/
-  background-image: url('Assets/Gpt.png')no-repeat center center/cover;
+  background: url("../Assets/Gpt.png") no-repeat center center/cover;
   color: white;
   height: 400px;
   display: flex;
@@ -124,7 +123,7 @@ nav a.active {
 }
 
 .hero{
-  
+  background-image: url('../Assets/Gpt.png');
 }
 
 .btn {
