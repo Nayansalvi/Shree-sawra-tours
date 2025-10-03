@@ -17,19 +17,5 @@ if(!emailPattern.test(email)){
 }else{
   error.textContent = ""
 }
-try{
-const PhoneRes = await
-fetch(`https://apilayer.net/api/validate?access_key=YOUR_API_KEY&number=${phone}&country_code=IN`)
-    const phonedata = await PhoneRes.json;
-      if(!PhoneData.valid){
-        err2.textContent = "❌ Enter a valid phone number!";
-        return;
-    } else {
-       err2.textContent = "";
-    }
-document.querySelector("#contactform").submit();
-}catch(error){
-  console.error(`Validation error API : ${error}`)
-  alert("Something went wrong. Please try again")
-}
+
      });
