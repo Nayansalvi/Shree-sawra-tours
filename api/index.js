@@ -171,7 +171,7 @@ app.delete('/api/bookings/:id', async (req, res) => {
 });
 
 // Start server
-async function startServer() {
+/*async function startServer() {
   await initializeBookingsFile();
   app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
@@ -179,5 +179,10 @@ async function startServer() {
   });
 }
 
-startServer();
-module.export = app;
+startServer();*/
+// ✅ Initialize bookings file once
+initializeBookingsFile();
+
+// ❌ Don't use app.listen() — Vercel handles this automatically
+// ✅ Just export the app for Vercel
+module.exports = app;
