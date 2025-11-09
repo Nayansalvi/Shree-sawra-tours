@@ -89,6 +89,6 @@ bookButton.addEventListener("click", async () => {
 } catch (err) {
   console.error(err);
   alert("⚠️ Could not connect to the server!");
-}
-  }
+    }
+  })
 });
