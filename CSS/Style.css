@@ -317,30 +317,6 @@ nav a.active {
   }
 }
 
-/* Scroll Gallery 
-.scroll-gallery {
-  padding: 0.5rem;
-  text-align: center;
-}
-.scroll-container {
-  display: flex;
-  overflow-x: auto;
-  gap: 1rem;
-  padding: 1rem;
-  scroll-snap-type: x mandatory;
-}
-.scroll-container img {
-  width: 250px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-  flex-shrink: 0;
-  scroll-snap-align: center;
-  transition: transform 0.3s ease ;
-}
-.scroll-container img:hover{
-  transform: scale(1.05);
-}*/
 
 .feedback{
       padding: 2rem;
@@ -541,6 +517,7 @@ footer {
 .footer-container h2 {
   font-size: 18px;
   margin-bottom: 8px;
+  color: #fff;
 }
 
 .footer-social {
@@ -581,6 +558,7 @@ footer {
 @media (max-width: 360px) {
   .footer-container h2 {
     font-size: 16px;
+    color: #fff;
   }
 
   .footer-social a {
