@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.body {
+      font-family: Arial, sans-serif;
+      background: #f4f6ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+/* HEADER + NAV */
+header {
+  background: #004aad;
+  color: white;
+  height: 3.72rem;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky; 
+  top: 0;
+  z-index: 10;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0.6rem;
+}
+
+  
+
+/* MOBILE NAV STYLES */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background: #004aad;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: none;
+    text-align: center;
+  }
+
+
+ #menu-toggle:checked + .menu-icon + nav ul {
+  display: flex;
+  animation: slideDown 0.3s ease-in-out;
+}
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  nav ul li {
+    padding: 1rem 0;
+  }
+  header {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid gold;
+}
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active nav link */
+nav a.active {
+  border-bottom: 2px solid #090236;
+}
+
+/* Shrinking header on scroll */
+header.shrink {
+  padding: 0.5rem 2rem;
+  background: #003080;
+  transition: 0.3s;
+}
+
+#wlcm{
+  font-family: , Sans-Serif;
+  font-size: 2rem;
+}*/
+
+
+/* HERO SECTION */
+.hero {
+  background: url("../Assets/Raj.png") no-repeat center center/cover;
+  color: white;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero{
+  background-image: url('../Assets/Raj.jpg');
+}
+
+.btn {
+  background: linear-gradient(90deg, gold, orange);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+    .booking-form {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 340px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .price-box {
+      margin-top: 15px;
+      background: #eaf1ff;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      color: #004aad;
+    }
+
+    button {
+      width: 100%;
+      background: #004aad;
+      color: white;
+      padding: 10px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #003580;
+    }
+    footer {
+  background-color: #002b5c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-container h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-social {
+  margin: 10px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #014078;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #1da1f2;
+}
+
+.footer-info {
+  font-size: 12px;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.footer-bottom {
+  font-size: 11px;
+  margin-top: 5px;
+  color: #aaa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 360px) {
+  .footer-container h2 {
+    font-size: 16px;
+  }
+
+  .footer-social a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .footer-info {
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+.copy{
+  width: 100%;
+  border-top: 1px solid #090236;
+  padding: 0.60rem;
+  margin-top: 0.60rem;
+} 
+footer {
+  background-color: #002b5c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer-container h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.footer-social {
+  margin: 10px 0;
+}
+
+.footer-social a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #014078;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #1da1f2;
+}
+
+.footer-info {
+  font-size: 12px;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.footer-bottom {
+  font-size: 11px;
+  margin-top: 5px;
+  color: #aaa;
+}
+
+/* Mobile adjustments */
+@media (max-width: 360px) {
+  .footer-container h2 {
+    font-size: 16px;
+  }
+
+  .footer-social a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .footer-info {
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+.copy{
+  width: 100%;
+  border-top: 1px solid #090236;
+  padding: 0.60rem;
+  margin-top: 0.60rem;
+} 
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Active nav link */
+nav a.active {
+  border-bottom: 2px solid #090236;
+}
+
+/* Shrinking header on scroll */
+header.shrink {
+  padding: 0.5rem 2rem;
+  background: #003080;
+  transition: 0.3s;
+}
+
+#wlcm{
+  font-family: "Dancing Script", Sans-Serif;
+  font-size: 2rem;
+}
