@@ -15,5 +15,5 @@ function changeTestimonial() {
 }
 
 setInterval(changeTestimonial, 3000);
-
+})
 
