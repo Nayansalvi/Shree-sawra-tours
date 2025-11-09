@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const testimonials = [
   "“Amazing trip with Shree Sawara Tours!”",
   "“Best travel service in Rajasthan.”",
@@ -13,4 +14,6 @@ function changeTestimonial() {
   index = (index + 1) % testimonials.length;
 }
 
-setInterval(changeTestimonial, 3000); // every 3 sec
+setInterval(changeTestimonial, 3000);
+
+

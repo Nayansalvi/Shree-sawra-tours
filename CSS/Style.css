@@ -273,12 +273,54 @@ nav a.active {
   width: 250px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-/* Scroll Gallery */
 .scroll-gallery {
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
-  
+  overflow: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.scroll-track img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.scroll-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Keyframes for infinite scroll */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Scroll Gallery 
+.scroll-gallery {
+  padding: 0.5rem;
+  text-align: center;
 }
 .scroll-container {
   display: flex;
@@ -294,7 +336,11 @@ nav a.active {
   border-radius: 10px;
   flex-shrink: 0;
   scroll-snap-align: center;
+  transition: transform 0.3s ease ;
 }
+.scroll-container img:hover{
+  transform: scale(1.05);
+}*/
 
 .feedback{
       padding: 2rem;
