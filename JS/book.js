@@ -59,7 +59,7 @@ bookButton.addEventListener("click", async () => {
     date: new Date().toLocaleString()
   };
 
-  try {
+ /* try {
     const res = await fetch("http://localhost:5000/api/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -72,7 +72,24 @@ bookButton.addEventListener("click", async () => {
     } else {
       alert("❌ Error while saving booking");
     }
-  } catch (err) {
+  } */
+  try {
+  const res = await fetch("/api/book", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(bookingData)
+  });
+
+  const data = await res.json();
+  if (data.success) {
+    alert("✅ Booking saved successfully!");
+  } else {
+    alert("❌ Error while saving booking");
+  }
+} catch (err) {
+  console.error(err);
+  alert("⚠️ Could not connect to the server!");
+}catch (err) {
     console.error(err);
     alert("⚠️ Could not connect to the server!");
   }
