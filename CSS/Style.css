@@ -281,7 +281,7 @@ nav a.active {
 
 .scroll-container {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   gap: 1rem;
   padding: 1rem;
   scroll-snap-type: x mandatory;
