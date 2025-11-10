@@ -74,21 +74,22 @@ bookButton.addEventListener("click", async () => {
     }
   } */
   try {
-  const res = await fetch("/api/book", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(bookingData)
-  });
+      const res = await fetch("https://shree-sawra-tours.vercel.app/api/book", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(bookingData)
+      });
 
-  const data = await res.json();
-  if (data.success) {
-    alert("✅ Booking saved successfully!");
-  } else {
-    alert("❌ Error while saving booking");
-  }
-} catch (err) {
-  console.error(err);
-  alert("⚠️ Could not connect to the server!");
+      const data = await res.json();
+
+      if (data.success) {
+        alert("✅ Booking saved successfully!");
+      } else {
+        alert("❌ Error while saving booking: " + (data.message || "Unknown error"));
+      }
+    } catch (err) {
+      console.error(err);
+      alert("⚠️ Could not connect to the server!");
     }
   })
 });
