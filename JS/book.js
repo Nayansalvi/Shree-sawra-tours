@@ -74,11 +74,11 @@ bookButton.addEventListener("click", async () => {
     }
   } */
   try {
-      const res = await fetch("https://shree-sawra-tours.vercel.app/api/bookings", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(bookingData)
-      });
+      const res = await fetch("https://shree-sawra-tours.vercel.app/api/book", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(bookingData)
+});
 
       const data = await res.json();
 
