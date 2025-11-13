@@ -59,37 +59,29 @@ bookButton.addEventListener("click", async () => {
     date: new Date().toLocaleString()
   };
 
- /* try {
-    const res = await fetch("http://localhost:5000/api/book", {
+  console.log("📦 Sending booking data:", bookingData);
+
+  try {
+    // ✅ FIXED: Added /api/book to the endpoint
+    const res = await fetch("https://shreesawratours.vercel.app/api/book", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bookingData)
     });
 
+    console.log("📡 Response status:", res.status);
+
     const data = await res.json();
+    console.log("📥 Response data:", data);
+
     if (data.success) {
       alert("✅ Booking saved successfully!");
+      console.log("✅ Booking ID:", data.booking._id);
     } else {
-      alert("❌ Error while saving booking");
+      alert("❌ Error while saving booking: " + (data.message || "Unknown error"));
     }
-  } */
-  try {
-      const res = await fetch("https://shreesawratours-backend.vercel.app", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(bookingData)
-});
-
-      const data = await res.json();
-
-      if (data.success) {
-        alert("✅ Booking saved successfully!");
-      } else {
-        alert("❌ Error while saving booking: " + (data.message || "Unknown error"));
-      }
-    } catch (err) {
-      console.error(err);
-      alert("⚠️ Could not connect to the server!");
-    }
-  })
+  } catch (err) {
+    console.error("❌ Connection error:", err);
+    alert("⚠️ Could not connect to the server! Check console for details.");
+  }
 });
