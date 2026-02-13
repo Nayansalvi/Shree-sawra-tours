@@ -48,6 +48,16 @@ bookButton.addEventListener("click", async () => {
 
   console.log("Booking Data:", bookingData);
 
-  alert("Booking successful!");
+  
+    emailjs.send("service_fs4fa1u", "template_b9fe1fe", bookingData)
+    .then(() => {
+      alert("Booking sent successfully!");
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send booking.");
+    });
 });
+
 })
+
