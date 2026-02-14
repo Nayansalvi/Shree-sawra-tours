@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+const name = document.getElementById("name");
+const number = document.getElementById("number");
+const email = document.getElementById("email");
 const passengers = document.getElementById("passengers");
 const packageSelect = document.getElementById("package");
 const carSelect = document.getElementById("car");
@@ -39,6 +42,9 @@ carSelect.addEventListener("change", calculatePrice);
 bookButton.addEventListener("click", async () => {
 
   const bookingData = {
+    name: name.value,
+    number: number.value,
+    email: email.value,
     packagePrice: parseInt(packageSelect.value) || 0,
     numPersons: parseInt(passengers.value) || 1,
     carType: carSelect.value,
