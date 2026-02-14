@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  emailjs.init("VjlQFT90DW9p4y8Gf");
 const name = document.getElementById("name");
 const number = document.getElementById("number");
 const email = document.getElementById("email");
